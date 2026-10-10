@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Premium dark fitness palette */
+  --bg-base: #07111b;
+  --bg-surface: #0d1724;
+  --bg-card: rgba(15, 25, 37, 0.86);
+  --bg-card-strong: #101d2b;
+  --bg-card-hover: #132236;
+  --bg-input: #0b141d;
+  --bg-subtle: #121f2d;
+  --bg-elevated: #182635;
+
+  /* Accent system */
+  --accent-primary: #6ee7a8;
+  --accent-primary-strong: #3ddc97;
+  --accent-primary-soft: rgba(110, 231, 168, 0.13);
+  --accent-orange: #ff8a3d;
+  --accent-orange-strong: #ff6d1f;
+  --accent-orange-soft: rgba(255, 138, 61, 0.14);
+  --accent-blue: #57b7ff;
+  --accent-blue-soft: rgba(87, 183, 255, 0.14);
+  --accent-purple: #9f8cff;
+  --accent-purple-soft: rgba(159, 140, 255, 0.14);
+  --accent-red: #ff5f6d;
+  --accent-red-soft: rgba(255, 95, 109, 0.12);
+
+  --color-success: #3ddc97;
+  --color-danger: #ff5f6d;
+  --color-danger-light: rgba(255, 95, 109, 0.12);
+  --color-warning: #ffb84d;
+
+  /* Semantic accent aliases (used in older code) */
+  --accent-green: #3ddc97;
+  --accent-green-light: rgba(61, 220, 151, 0.12);
+  --accent-green-glow: rgba(61, 220, 151, 0.25);
+  --accent-orange-light: rgba(255, 138, 61, 0.13);
+  --accent-orange-glow: rgba(255, 138, 61, 0.25);
+  --accent-blue-light: rgba(87, 183, 255, 0.13);
+  --accent-purple-light: rgba(159, 140, 255, 0.13);
+  --accent-red-light: rgba(255, 95, 109, 0.13);
+
+  /* btn-outline */
+  --btn-outline-border: rgba(148, 163, 184, 0.3);
+
+  /* Text */
+  --text-primary: #edf5ff;
+  --text-secondary: #a8b4c7;
+  --text-muted: #71819a;
+  --text-inverse: #08131d;
+
+  /* Borders */
+  --border-subtle: rgba(148, 163, 184, 0.14);
+  --border-card: rgba(148, 163, 184, 0.18);
+  --border-focus: rgba(110, 231, 168, 0.5);
+  --border-orange: rgba(255, 138, 61, 0.4);
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 12px 30px rgba(3, 7, 18, 0.42);
+  --shadow-soft: 0 8px 20px rgba(10, 18, 28, 0.38);
+  --shadow-glow: 0 0 28px rgba(110, 231, 168, 0.18);
+  --shadow-glow-orange: 0 0 26px rgba(255, 138, 61, 0.24);
+
+  /* Transitions */
+  --transition-fast: 0.16s ease;
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Sidebar width */
+  --sidebar-width: 246px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  min-height: 100%;
+  font-family: var(--font-family);
+  background:
+    radial-gradient(circle at top left, rgba(110, 231, 168, 0.12), transparent 18%),
+    radial-gradient(circle at top right, rgba(87, 183, 255, 0.12), transparent 25%),
+    var(--bg-base);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(110, 231, 168, 0.22);
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: rgba(9, 17, 26, 0.8); }
+::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.35); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(148, 163, 184, 0.5); }
